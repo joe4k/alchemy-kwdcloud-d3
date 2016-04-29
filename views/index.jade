@@ -1,0 +1,19 @@
+doctype html
+
+head
+script(src='http://d3js.org/d3.v3.min.js', charset='utf-8')
+script(src='js/d3.layout.cloud.js')
+script(src='js/jswordcloud.js')
+
+link(rel='stylesheet', href='stylesheets/style.css')
+
+body 
+h2(style='font-size:50%;text-align:center') URL Analyzed: #{refurl}
+div
+ #keywords-cloud
+  h3(style='text-align:center') Keywords Word Cloud
+//#{keywords}
+script(type='text/javascript').
+    var keywds = !{keywords};
+    d3_draw_words(keywds,'keywords-cloud');
+
