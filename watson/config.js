@@ -7,7 +7,7 @@
 var extend = require('extend');
 
 var services = {
-  alchemy_api_key: process.env.ALCHEMY_API_KEY || ''
+  alchemy_api_key: process.env.ALCHEMY_API_KEY || 'ENTER_YOUR_APIKEY_HERE'
 };
 
 function getBluemixServiceConfig(name) {
